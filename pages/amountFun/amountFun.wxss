@@ -1,0 +1,115 @@
+page {
+  height: 100%;
+  overflow: hidden;
+}
+
+.deposit {
+  height: 100%;
+}
+
+/*押金*/
+
+.deposit_progress_tips {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff;
+}
+.deposit_bdg{
+  width: 730rpx;
+  height: 360rpx;
+}
+
+.footer button {
+  width: 690rpx;
+}
+
+
+
+
+/*progress*/
+
+
+.deposit_progress_one_tips {
+  position: absolute;
+  /* width: 52rpx;
+  height: 52rpx;
+  left: 162rpx; */
+  width: 400rpx;
+  height: 52rpx;
+  left: 20rpx;
+  top: 78rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+
+.deposit_progress_two_tips {
+  position: absolute;
+  width: 250rpx;
+  height: 52rpx;
+  right: 40rpx;
+  top: 78rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 50rpx;
+  color: #fff;
+}
+
+.deposit_progress_tips {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  color: #fff;
+  width: 750rpx;
+}
+
+.deposit_progress_one_title {
+  position: absolute;
+  left: 60rpx;
+  top: 140rpx;
+  /*width: 200rpx;*/
+}
+
+.deposit_progress_two_title {
+  position: absolute;
+  right: 130rpx;
+  top: 140rpx;
+  /*width: 200rpx;*/
+}
+
+.deposit-des {
+  text-align: center;
+  z-index: 1000000000;
+}
+
+.deposit-btn {
+  margin: 30rpx 0 20rpx;
+  font-size: 42rpx;
+  color: #000;
+}
+
+.deposit-ms {
+  font-size: 32rpx;
+  color: #888;
+}
+
+.pay-btn {
+  width: 600rpx;
+  height: 90rpx;
+  background: #3692fc;
+  margin: 58rpx auto 0;
+  text-align: center;
+  color: #fff;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+}
+
+.deposit_progress_logo{
+  text-align:center;
+  margin-top:2%;
+}

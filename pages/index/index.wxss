@@ -1,0 +1,323 @@
+/**index.wxss**/
+
+@import "../../components/Toast/toast.wxss";
+@import "../../components/advertisement/advertisement.wxss";
+/* .tipUser{
+    margin: 0;
+    padding: 0;
+    background: rgba(54, 146, 252, 0.8);
+    width: 100%;
+    height: 88rpx;
+    text-align: center;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+} */
+  .bikeRiding{
+    background-color: #FFFFFF;
+   }
+   /* **************des开始************/
+   .des{
+    display: flex;
+    flex-flow: row;
+    height: 20%; 
+    width: 100%; 
+    /* border-bottom: 2rpx solid #D7E0E4; */
+}
+
+.des_detail{
+    width: 49%;   
+    height: 30%;
+    -webkit-box-flex: 1;
+     /* text-align: center; 
+     background:green;  */
+     padding-left:42rpx;            
+}
+ 
+.des_info{
+    width: 100%;   
+    height: 15%;
+    font-size: 28rpx;
+    -webkit-box-flex: 1;
+}  
+
+.top{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display:inline-flex;
+    color: "#000000"; 
+    font-size: 30rpx;
+}
+.cost{
+    margin-left: 14rpx;
+    font-size: 28rpx;
+}
+.desmo{
+    margin-left: 2px;
+    margin-top: -4rpx;  
+    font-size: 36rpx; 
+    font-weight: bold;
+    color:#3692fc;
+     width: 135rpx; 
+}
+.images{ 
+    margin-left: 10px;
+    width:30rpx;
+    height:30rpx;
+}  
+
+.des_info{
+    text-align: center;
+    /* margin-bottom: 10px;  */
+    padding: 16rpx; 
+}
+
+   /*****************des结束*****************/
+  .status{
+      display: flex;
+      flex-flow: row;
+      height: 32%; 
+      width: 100%;
+      border-bottom: 2rpx solid #D7E0E4;
+   }
+   
+  .statu{
+      width: 33.33%; 
+      height: 100%;
+      line-height: 40rpx;
+      -webkit-box-flex: 1;
+      text-align: center;   
+      
+  }
+   .sta{
+      width:180rpx;  
+      height:180rpx;   
+      border-radius:90rpx; 
+      margin:0 auto;
+      text-align: center; 
+      /* line-height:60rpx; */
+      border:1px solid #d6e2ff;
+  }
+    
+   
+  .sta_top {
+     color: #000000; 
+     font-size: 30rpx;
+     margin-top: 26%;
+     margin-bottom: 1%;
+  }
+  .sta_bottom{
+     color: #757575; 
+     font-size: 30rpx;
+  }
+  .lock {
+     display: flex;
+     flex-flow: row;
+     height: 10%;
+     width: 100%;
+     font-size: 30rpx;
+     margin:20rpx; /*距结束行驶按钮10rpx */
+  }
+  .button{
+     /* display: flex;
+     flex-flow: row; */
+     height: 80rpx;
+     width: 100%;
+     /* line-height:30rpx;
+     font-size: 30rpx; */
+  }
+  .left {
+     width: 47%;
+     -webkit-box-flex: 1;
+     margin-left: 3%;
+     margin: auto;
+     color: #3692fc;
+  }
+  .left_text {
+      width: 25%; 
+     -webkit-box-flex: 1;
+     margin-left: 24%;
+     /* margin: auto; */
+     color: #ABABAB;
+     /* background-color: blue; */
+  }
+  .right {
+    width: 80%;
+    height: 100%;
+     -webkit-box-flex: 1;
+     margin-right: 3%;
+     margin: auto;
+     color: "#3692fc";
+     line-height: 80rpx;
+     background-color:  '#3692fc';
+  }
+   .right_text {
+     width: 47%; 
+     -webkit-box-flex: 1;
+     margin-left: 0%;
+     /* margin: auto; */
+     color: #ABABAB;
+   }
+   image {
+     margin-right: 6rpx;
+     margin-bottom: -2rpx
+   }
+   .but_tem{
+     border:none;
+     width:60%;
+     height:60%; 
+     background-color:#3692fc;
+     color: white;
+     font-size: 30rpx;
+   }
+   .but_lock{
+     border-radius: 60rpx;
+     border-style:solid; 
+     border-width:1px; 
+     border-color:#3692fc;
+      /* width:80%;   */
+     height:80%; 
+     /* color: #3692fc; */
+     color:#fff;
+     text-align: center;
+     text-justify: auto;
+     background-color:#3692fc;
+     font-size: 30rpx;
+     line-height: 58rpx;
+     /* padding-top: 18rpx; */
+   }
+   .text{
+     color: #ABABAB;
+     height: 10%;
+     width: 100%;
+     font-size: 30rpx
+   }
+
+ /*<!--newm模块-->*/
+.mb-new {
+  width: 690rpx;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  top: 100rpx;
+  left: 30rpx;
+  box-shadow: 0 2px 5px #ccc;
+  line-height: 100rpx;
+}
+.mb-new cover-image {
+  float: left;
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+  margin: 25rpx 20rpx 0 30rpx;
+}
+.mb-new .right{
+  float: right;
+  margin-right: 30rpx;
+  color: #ccc;
+}
+.mb-new .act-text{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+
+ /*<!--mb-title模块-->*/
+.mb-title {
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  top: 30rpx;
+   line-height: 100rpx; 
+  background: red; 
+  -moz-border-radius: 100px / 50px; 
+  -webkit-border-radius: 100px / 50px; 
+  border-radius: 100px / 50px;
+}
+
+
+.hide{
+    display:none;
+}
+
+/**navbar模块导航栏**/
+.navbar{  
+  flex: none;  
+  display: flex; 
+  background: #3692fc;   
+  color:#0049bc;
+  /* background: #0072e3; */
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+   line-height: 66rpx;   
+}  
+.navbar .item.active{  
+  /* color: #3692fc;   */
+  color: #fff;
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: fixed;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: #FFCC00;  
+}  
+
+/* 骑行详情下滑上拉按键 */
+.down_up{
+  width:100%; 
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.down_up .up_img{
+  width:80rpx;
+  height:80rpx;
+  align-items: center;
+  margin: 0 auto;
+}
+/* 新增开始   */
+ .container {
+    height: 70rpx;
+    line-height:70rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius:35rpx;
+    width: 86%;
+    margin: 0rpx auto;  
+}
+.scrolltxt{
+    padding:0 20rpx;
+ 
+}
+.marquee_box {
+    position:relative;
+    color:#333;
+    height:70rpx;
+    display:block;
+    overflow:hidden;
+    border-radius:35rpx;
+    background: rgba(0, 0, 0, 0.4);
+} 
+.marquee_text {
+    white-space: nowrap;
+    position:absolute;
+    top:0;
+    font-size:14px;
+    height:70rpx;
+    line-height:70rpx;
+    border-radius:35rpx;
+}
+
+/* 新增结束   */

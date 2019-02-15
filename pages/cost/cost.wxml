@@ -1,0 +1,39 @@
+<view class="homepage">
+    <image src="../images/pay_success.png"></image>
+    <view class="cost">
+        <view class="cost1">
+              <text>成功支付:  ¥ <text>{{pays}}</text><text>元</text></text>
+        </view>
+    <!-- <view class="cost2">
+            <text>行程费用<text class="money">{{pay}}</text><text>元</text></text>
+         </view> -->
+    <!-- <view class="cost2">
+            <text>车辆搬运费<text class="money">{{sub_amount}}</text><text>元</text></text>
+         </view> -->
+    </view>
+    <view class="myWallet">
+        <view class="left">骑行时间</view>
+        <view class="right"><text>{{time}}</text> 分钟</view>
+    </view>
+    <!-- <view class="myWallet">
+      <view class="left">骑行距离</view>
+      <view class="right"><text>{{distance}}</text>米</view>
+    </view> -->
+    <!-- <view class="myWallet">
+      <view class="left">赠送红包</view>
+      <view class="right"><text>{{give_amount}}</text>元</view>
+    </view> -->
+     <view class="myWallet">
+        <view class="left">行程费用</view>
+        <view class="right"><text>{{pay}}</text> 元</view>
+    </view>
+    <view wx:if="{{truckage}}" class="myWallet">
+        <view class="left">车辆搬运费</view>
+        <view class="right"><text>{{sub_amount}}</text> 元</view>
+    </view>   
+    <view class="myWallet">
+        <view class="left">我的钱包</view>
+        <view class="right"><text>{{amount}}</text> 元</view>
+    </view>
+    <button bindtap="finishAct">完成</button>    
+</view>

@@ -1,0 +1,58 @@
+
+<!--自定义toast-->
+<import src="../../components/Toast/toast.wxml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+
+<view class="container" style='height:{{container}}'>
+   <scroll-view class="containers" scroll-y="true">
+            <view class="overage">
+                <view>
+                  <text class="overage-header">我的余额</text>
+                </view>
+                <view>
+                  <text class="overage-content">{{wallet}}</text>
+                </view>
+
+                <button class="btn-charge" bindtap="movetoCharge">充值</button> 
+            </view>
+
+            <!-- <view class="my-ticket tapbar">
+                <text>我的红包</text>
+                <text>{{red}}元</text>
+            </view> -->
+
+            <view class="my-deposit tapbar">
+                <text bindtap='movetoDeposit'>我的押金</text>
+                <text bindtap="{{depositFun}}"><text class="color">{{deposit}}元，{{depositTitle}}</text>></text>
+            </view>
+
+              <view class="my-credit tapbar">
+                <text>我的信用值</text>
+                <text>{{credit}}</text>
+            </view> 
+
+              <view class="my-trip tapbar" bindtap="trip">
+                <text>我的行程</text>
+                <text>></text>
+            </view> 
+
+            <view class="my-details tapbar" bindtap="details">
+                <text>我的账户明细</text>
+                <text>></text>
+            </view>  
+
+            <view class="about tapbar" bindtap="amountFun">
+                <text>余额退还</text>
+                <text>></text>
+            </view>            
+    </scroll-view>
+
+    <view class="foo">
+          下载挽乘智能车APP,骑行更方便      
+    </view>  
+
+</view>
+
+
+
+

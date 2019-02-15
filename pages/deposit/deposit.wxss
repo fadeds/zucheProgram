@@ -1,0 +1,132 @@
+page {
+  height: 100%;
+  overflow: hidden;
+}
+
+.deposit {
+  height: 100%;
+}
+
+/*押金*/
+
+.deposit_progress_tips {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff;
+  width: 750rpx;
+  height: 240rpx;
+  background: #333;
+}
+.deposit_bdg{
+  width: 730rpx;
+  height: 360rpx;
+}
+.content {
+  position: relative;
+  text-align: center;
+  /*margin-top: 64rpx;*/
+}
+
+.content-title {
+  color: #999;
+}
+
+.describe {
+  margin: 30rpx 0;
+}
+
+.footer button {
+  width: 690rpx;
+}
+
+
+/*progress*/
+
+.deposit_progress_pic {
+  text-align: center;
+  height: 208rpx;
+}
+
+.dep_pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -189rpx;
+  margin-top: -104rpx;
+  width: 378rpx;
+  height: 208rpx;
+}
+
+.deposit_progress_detail {
+  position: absolute;
+  width: 750rpx;
+  top: 68rpx;
+  text-align: center;
+}
+
+.deposit_num {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 52.8rpx;
+  color: #000;
+  letter-spacing: 0;
+}
+
+.rmb {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 33rpx;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.deposit-des {
+  text-align: center;
+}
+
+.deposit-btn {
+  margin: 30rpx 0 20rpx;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.deposit-ms {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.pay-btn {
+  width: 600rpx;
+  height: 90rpx;
+  background: #3692fc;
+  margin: 58rpx auto 0;
+  text-align: center;
+  color: #fff;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+}
+
+.pay-btnOpactiy {
+    opacity: .4;
+}
+
+.pay-btnOpactiy1 {
+    opacity: 1;
+} 
+
+.wxpay_logo {
+  vertical-align: middle;
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 16rpx;
+}
+
+/*已交纳押金*/
+.dep-height{
+  margin-top: 120rpx;
+}
+.dep-btn-height{
+  margin-top: 54rpx;
+}

@@ -1,0 +1,26 @@
+<!--pages/trip/trip.wxml-->
+
+<!--自定义toast-->
+<import src="../../components/Toast/toast.wxml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+
+<view class='container' style='height:{{container}}'>
+        <scroll-view class="containers" lower-threshold='120' upper-threshold='60' bindscrolltoupper="refreshMyTripData" bindscrolltolower="loadMoreMyTripData" scroll-y="true">
+
+                <block wx:for="{{dataSources}}" wx:key="trip">
+                            <view class="myrun">
+                                    <view class="begin_time"> 骑行日期: {{item.begin_time}}</view>
+                                    <view class="bike_id"> 电单车编号: {{item.bike_qr}} </view>
+                                    <view class="box">
+                                            <view class="box_left"><image  class="image-left" src="../images/img/costTime.png"  alt="骑行时间"/></view> 
+                                            <view class="use_time"> 骑行时间: {{item.use_time}}分钟 </view>
+                                            <view class="box_left"><image  class="image-right" src="../images/img/costIcon.png"  alt="骑行花费"/> </view> 
+                                            <view class="real_pay">骑行花费: {{item.real_pay/100}}元</view>
+                                    </view>
+                            </view>
+                </block>
+
+                <text class='footer' wx:if="{{isShowFooter}}">已经到底了</text>
+        </scroll-view>
+</view>
+

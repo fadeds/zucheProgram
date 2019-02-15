@@ -1,0 +1,92 @@
+/* pages/trip/trip.wxss */
+
+@import "../../components/Toast/toast.wxss";
+
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color:#fcfcfc ; 
+}
+
+ .containers{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.myrun { 
+    width:100%;
+    height: 195rpx;
+    background: #fff; 
+    margin-top: 15rpx;  
+}
+
+.begin_time {
+    width: 100%;
+    font-size: 26rpx;
+    color: "#ffffff";
+    overflow: hidden;
+    line-height: 50rpx;
+    padding: 20rpx 0 6rpx 25rpx; 
+}
+
+.bike_id {
+   width: 100%;
+   color: #bbbbbb;
+   font-size: 22rpx;
+   line-height: 50rpx;
+   padding-left:20rpx;
+}
+.box{
+    width: 100%;
+    height: 60rpx;
+}
+.box_left{
+    width:36rpx;
+    height:26rpx;
+    float: left; 
+    padding:3rpx 0 20rpx 20rpx;
+}
+.image-left{
+    width: 40rpx;
+    height: 40rpx;
+    /* padding-top: 8rpx; */
+}
+.image-right{
+    width: 40rpx;
+    height: 40rpx;
+}
+.use_time{
+    width: 46%;
+    height: 20rpx;
+    float: left;
+    font-size:24rpx;
+    padding: 6rpx 0 20rpx 10rpx;
+}
+    
+.real_pay{
+    width: 29%;
+    float: left;
+    height:42rpx;
+    font-size: 24rpx;
+    padding: 6rpx 0 20rpx 10rpx;
+}
+.body-view{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.footer{
+  font-size: 30rpx;
+  color: #636363; 
+  text-align: center; 
+  display: block; 
+  padding: 0rpx; 
+  margin-bottom: 20rpx;    
+}

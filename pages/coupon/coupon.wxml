@@ -1,0 +1,23 @@
+<scroll-view class="coupon" scroll-y='true' scroll-top='0'>
+
+   <view class="item" wx:for-items="{{list}}">
+      <image src="{{item.raffle_url}}"/>  
+      <!-- <image class="img" src="../images/coupon.png" />  -->
+     <!--  金额 -->
+      <view class="money">
+        <text class="txt" >{{item.raffle_amount}}</text> 元
+      </view> 
+      <!-- 优惠券名称 -->
+      <view class="content">
+        <view class="name">
+        <!-- 挽乘智能车用车券 -->
+        挽乘智能车●{{item.raffle_name}}
+        </view>
+        <!-- 优惠券有效期 -->
+        <view class="expiry">
+        有效期:  {{item.create_time}}至{{item.expire_time}}
+        </view>
+      </view>
+   </view> 
+   
+ </scroll-view>

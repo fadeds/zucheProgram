@@ -1,0 +1,34 @@
+<view class="homepage">
+    <text class='phoneLb'>手机号码</text>
+    <input class='Tf phoneTf' bindinput='phoneTfInput' maxlength="11" type="number" placeholder="填写手机号" auto-focus/>
+    <button class='getCodeBtn' style='color:{{getCodeBtnProperty.titileColor}}' type="default" bindtap='getCodeAct' disabled='{{getCodeBtnProperty.disabled}}' loading='{{getCodeBtnProperty.loading}}'>{{getCodeBtnProperty.title}}</button>
+    <text class='Lb codeLb' decode="true">验&ensp;证&ensp;码</text>
+    <input class='Tf codeTf' bindinput='codeTfInput' maxlength="6" type="number" placeholder="验证码" />
+<button class='btn-charge' bindtap='loginAct'  style="opacity:{{loginBtnProperty.opacity}};"  loading='{{loginBtnProperty.loading}}'>登录</button>
+    <text class='attentionLb'>点击登录,即代表已阅读并同意</text>
+    <view class='explainBtn' bindtap='serviceAct'>《用车服务条款》</view>
+    <view class="explain">未满16周岁谢绝骑行!</view>
+
+      <!-- 自定义弹框开始 -->
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModel}}"></view>
+
+    <view class="modal-dialog" wx:if="{{showModel}}">
+
+        <view class="modal-title">获取微信授权信息</view>
+        
+        <view class="modal-content">
+                微信免密登录需要获取您的用户信息，是否允许?
+        </view>
+
+        <view class="modal-footer">
+            <view class="btn-cancel" bindtap="onCancel" data-status="cancel">不允许</view>
+            <button open-type="getUserInfo" class="btn-confirm" bindgetuserinfo="agreeGetUserInfo" lang="zh_CN">允许</button>
+            
+        </view>
+
+    </view>
+    <!-- 自定义弹框结束 -->
+
+
+
+</view>

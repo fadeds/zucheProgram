@@ -1,0 +1,130 @@
+.Lb{
+  position: absolute;
+    background-color: #FFFFFF;
+    font-size: 32rpx;
+    font-weight:bold;
+    font-family: Times New Roman;
+    text-align: center;
+    line-height: 80rpx;
+    left: 0;
+    height: 80rpx;
+    width: 200rpx;
+}
+.Tf{
+    position: absolute;
+    background-color: #FFFFFF;
+    font-size: 32rpx;
+    left: 200rpx;
+    height: 80rpx;
+}
+.phoneLb {
+    top: 60rpx;
+}
+
+.phoneTf{
+        top: 60rpx; 
+        width: 300rpx;  
+}
+.getCodeBtn {
+    position: absolute;
+    right: 0rpx;
+    top: 60rpx;
+    width: 252rpx;
+    height: 80rpx;
+    background-color: #FFFFFF;
+    line-height: 80rpx;
+    font-size: 32rpx;
+}
+
+.codeLb {
+    top: 388rpx;  
+}
+
+.codeTf {
+    top: 388rpx;
+    right: 0rpx; 
+}
+.nameLb {
+    top: 142rpx;
+}
+.nameTf {
+    top: 142rpx;
+    right: 0rpx;
+}
+.cardLb {
+    top: 224rpx;
+}
+.cardTf {
+    top: 224rpx;
+    right: 0rpx;
+}
+.pwdLb {
+    top: 306rpx;
+}
+.pwdTf {
+    top: 306rpx;
+    right: 0rpx;
+}
+
+
+
+.loginBtn {
+    position: absolute;
+    left: 40rpx;
+    top: 576rpx;
+    width: 670rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.attentionLb {
+    position: absolute;
+    right: 312rpx;
+    top: 656rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 24rpx;
+    color: #6D6D6D
+}
+
+.attentionLb2 {
+    position: absolute;
+    right: 282rpx;
+    top: 726rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 32rpx;
+    color: #6D6D6D
+}
+
+.explainBtn {
+    position: absolute;
+    left: 438rpx;
+    top: 410rpx;
+    height: 80rpx;
+    color: #3692fc;
+    line-height: 80rpx;
+    font-size: 24rpx;
+}
+.explainBtn2 {
+    position: absolute;
+    left: 478rpx;
+    top: 726rpx;
+    height: 120rpx;
+    color: #3692fc;
+    line-height: 120rpx;
+    font-size: 32rpx;
+}
+
+.explainBtn {
+    position: absolute;
+    left: 438rpx;
+    top: 656rpx;
+    height: 80rpx;
+    color: #3692fc;
+    line-height: 80rpx;
+    font-size: 24rpx;
+}
+
+
+

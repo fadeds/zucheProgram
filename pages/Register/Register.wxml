@@ -1,0 +1,21 @@
+<view class="homepage">
+
+    <text class='Lb phoneLb'>手机号码</text>
+    <input class='Tf phoneTf' bindinput='phoneTfInput' maxlength="11" type="number" placeholder="填写手机号" auto-focus/>
+    <button class='getCodeBtn' style='color:{{getCodeBtnProperty.titileColor}}' type="default" bindtap='getCodeAct' disabled='{{getCodeBtnProperty.disabled}}' loading='{{getCodeBtnProperty.loading}}'>{{getCodeBtnProperty.title}}</button>
+   <text class='Lb nameLb' decode="true">真实姓名</text>
+    <input class='Tf nameTf' bindinput='nameTfInput' maxlength="4" type="text" placeholder="身份证姓名" />
+    <text class='Lb cardLb'>身份证号</text>
+    <input class='Tf cardTf' bindinput='cardTfInput' maxlength="18" type="idcard" placeholder="身份证号码" />
+    <text class='Lb pwdLb' decode="true">登录密码</text>
+    <input class='Tf pwdTf' bindinput='pwdTfInput' maxlength="16" type="text" placeholder="6-16位数字或字母组成" />
+        <text class='Lb codeLb' decode="true">验&ensp;证&ensp;码</text>
+    <input class='Tf codeTf' bindinput='codeTfInput' maxlength="6" type="number" placeholder="验证码" />
+    
+    <button class='loginBtn' type="primary" bindtap='loginAct' style="opacity:{{loginBtnProperty.opacity}};color: white; background-color: {{app.globalData.main_color}};" disabled='{{loginBtnProperty.disabled}}' loading='{{loginBtnProperty.loading}}'>注册</button>
+    <text class='attentionLb'>点击登录,即代表已阅读并同意</text>
+    <view class='explainBtn' bindtap='serviceAct'>《用车服务条款》</view>
+    <text class='attentionLb2'>已经有挽乘智能车帐号？ </text>
+    <view class='explainBtn2' bindtap='login'>立即登陆</view>
+
+</view>

@@ -1,0 +1,34 @@
+.container {
+    height: 70rpx;
+    line-height:70rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius:35rpx;
+    width: 86%;
+    margin: 0 auto;
+  
+}
+.scrolltxt{
+    padding:0 20rpx;
+ 
+}
+.marquee_box {
+    position:relative;
+    color:#333;
+    height:70rpx;
+    display:block;
+    overflow:hidden;
+    border-radius:35rpx;
+    background: rgba(0, 0, 0, 0.4);
+} 
+.marquee_text {
+    white-space: nowrap;
+    position:absolute;
+    top:0;
+    font-size:14px;
+    height:70rpx;
+    line-height:70rpx;
+    border-radius:35rpx;
+}

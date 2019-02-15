@@ -1,0 +1,21 @@
+<!--pages/details/details.wxml-->
+
+<!--自定义toast-->
+<import src="../../components/Toast/toast.wxml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+
+
+<view class='container' style='height:{{container}}'>
+        <scroll-view class="containers" lower-threshold='120' upper-threshold='60' bindscrolltoupper="refreshBillsData" bindscrolltolower="loadMoreBillsData" scroll-y="true" bindscroll="scrolling">
+                <block wx:for="{{dataSources}}" wx:key="bill">
+                    <view class="detail">
+                        <text class="riding left">{{item.bill_type_desc}}</text>
+                        <text class="riding_pay right">{{item.bill_amount/100}}元 </text>
+                        <text class="riding_date left">{{item.bill_time}}</text>
+                        <text class="system_d right">{{item.pay_type}}</text>
+                    </view>
+                </block>
+
+                <text class='footer' wx:if="{{isShowFooter}}">已经到底了</text>       
+        </scroll-view>  
+</view>

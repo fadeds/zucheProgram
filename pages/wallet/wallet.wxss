@@ -1,0 +1,125 @@
+/* pages/wallet/index.wxss */
+
+@import "../../components/Toast/toast.wxss";
+
+ .containers{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 93%;
+}
+
+.container{
+   background-color: #f2f2f2;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   display: block;
+   overflow: hidden;
+}
+
+.overage{
+    padding: 40rpx; 
+    background-color: #fff; 
+   text-align: center;
+}
+
+.overage .overage-header{
+   font-size: 28rpx;
+}
+
+.overage .overage-content{
+   display: block;
+   font-size: 100rpx;
+   font-weight: 700;
+   padding: 30rpx 0;
+   margin: 20rpx 0;
+}
+
+.overage .overage-desc{
+   font-size: 28rpx;
+   border: 2rpx solid #666;
+   padding: 10rpx 20rpx;
+   border-radius: 60rpx;
+}
+
+/* .btn-charge{
+   width: 90%;
+   background-color: #b9dd08;
+   border-radius: 10rpx;
+   margin-top: 30rpx;
+} */
+
+
+button {
+  margin-top:50rpx;
+  background-color:#3692fc;
+  color:#FFFFFF;
+  height:80rpx;
+  width:90%;
+  border-radius:40rpx;
+  line-height:80rpx;
+  margin-bottom:30rpx;
+}
+button {
+  position:relative;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:14px;
+  padding-right:14px;
+  box-sizing:border-box;
+  font-size:18px;
+  text-align:center;
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+    overflow:hidden;  
+}
+
+
+button::after {
+  content:" ";
+  width:200%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+  border:1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transform:scale(0.5);
+  transform:scale(0.5);
+  -webkit-transform-origin:0 0;
+  transform-origin:0 0;
+  box-sizing:border-box;
+  border-radius:10px
+}
+
+.tapbar{
+   display: flex;
+   background-color: #fff;
+   margin:20rpx 0;
+   padding: 30rpx;
+   align-items: center;
+   justify-content: space-between;
+   font-size:32rpx; 
+}
+
+.my-deposit{
+   margin-top: 2rpx;
+}
+
+.color{
+   color: #3692fc;
+   margin-right: 10rpx;
+}
+
+ .foo{ 
+  width: 100%;
+  height: 7%;
+  padding: 20rpx;   
+  color:#fff;
+  background-color: #3692fc;
+  font-size:32rpx;
+  position: relative;  
+  top: 0;
+  margin: 0;
+} 

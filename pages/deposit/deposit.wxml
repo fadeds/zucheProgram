@@ -1,0 +1,45 @@
+<!--未交纳押金-->
+<view class="deposit {{depositData.isPayPosit?'dis':''}}">
+  <view class="deposit_progress">
+    <view class="deposit_progress_logo">
+    <image class="deposit_bdg" src="../images/deposit_bdg.png" />
+    </view>
+  </view>
+  <view class="content">
+    <view class="deposit_progress_pic">
+      <image class="dep_pic" src="../images/img/deposit.png" />
+    </view>
+    <view class="deposit_progress_detail">
+      <view class="deposit_num">{{depositData.depositNum}}</view>
+      <view class="rmb">元</view>
+    </view>
+  </view>
+  <view class="deposit-des">
+    <view class="deposit-btn">需交纳押金</view>
+    <view class="deposit-ms">押金可全退</view>
+  </view>
+  <view bindtap="wxpay" class="pay-btn {{hasBtn?'pay-btnOpactiy':'pay-btnOpactiy1'}}">
+    <image class="wxpay_logo" src="../images/img/shape.png" />微信支付
+  </view>
+</view>
+<!--未交纳押金-->
+<!--已交纳押金-->
+<!-- <view class="deposit {{depositData.isPayPosit?'':'dis'}}">
+  
+  <view class="content dep-height">
+    <view class="deposit_progress_pic">
+      <image class="dep_pic" src="../images/img/deposit_success.png" />
+    </view>
+    <view class="deposit_progress_detail">
+      <view class="deposit_num">{{depositData.depositNum}}</view>
+      <view class="rmb">元</view>
+    </view>
+  </view>
+  <view class="deposit-des dep-btn-height">
+    <view class="deposit-btn">已交纳押金</view>
+  </view>
+  
+</view> -->
+<!--已交纳押金-->
+
+

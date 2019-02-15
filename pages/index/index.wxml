@@ -1,0 +1,91 @@
+<!--自定义toast-->
+<import src="../../components/Toast/toast.wxml"/>
+<template is="toast" data="{{ ..._toast_ }}"/>
+<import src="../../components/advertisement/advertisement.wxml"/>
+<template is="advertisement" data="{{ ..._advertisement_ }}"/>
+
+<view class="homepage" style="overflow: hidden;">
+        <!--导航-->
+        <view class="navbar" >  
+            <view data-idx="0" class="item {{radioCheckVal==0 ? 'active' : ''}}" wx:key="unique" bindtap="getBikeList">电单车</view>  
+            <view data-idx="1" class="item {{radioCheckVal==1 ? 'active' : ''}}" wx:key="unique" bindtap="getBikeSports">停车点</view>  
+        </view>  
+        <!--end导航-->
+        <map id="myMap" polyline="{{polyline}}" longitude="{{point.longitude}}" latitude="{{point.latitude}}" markers="{{markers}}" scale="{{mapScale}}" show-location bindregionchange="regionchange" bindmarkertap="markertap" controls="{{controls}}" bindcontroltap="controltap" style="width: {{mapWidth}}; height: {{mapHeight}};margin-top: {{mapTop}} wx:if='{{map}}'"> 
+        <!-- /************************************************des层开始*********************************************/ --> 
+        <cover-view class="bikeRiding" wx:if="{{bikeRiding.show}}" style="width: {{bikeRiding.width}};">             
+        <cover-view class="des"> 
+                <cover-view class="des_detail">
+                    <cover-view class='top' >  
+                        <cover-image class="images" src="../images/imgs_riding_time.png"/>
+                        <cover-view class="cost">骑行时间:</cover-view>
+                        <cover-view class='desmo' decode="true">{{bikeRiding.ridingTime}}分钟</cover-view>
+                    </cover-view>
+                      <!-- <cover-view style="color: #757575; font-size: 30rpx"></cover-view>  -->
+                </cover-view>
+                <cover-view class="des_detail">
+                    <cover-view class='top'>
+                        <cover-image class="images"  src="../images/imgs_riding_distance.png"/>
+                        <cover-view class="cost" >骑行费用:</cover-view>
+                        <cover-view class='desmo' >{{bikeRiding.pay}}元 </cover-view>   
+                    </cover-view>
+                </cover-view>
+            </cover-view> 
+        <!-- /*****************************************************des层结束************************************************/ -->
+
+            <!--statu层-->
+            <cover-view class="{{down==1?'hide':''}}" style="line-height:0rpx;">
+                    <cover-view class="status">
+                        <cover-view class="statu">
+                            <cover-view class="sta">
+                                <cover-view class='sta_top'>{{bikeRiding.batt}}%
+                                    <!-- <text style=" font-size: 30rpx; font-weight: bold;color:#00d77e">{{bikeRiding.batt}}%</text> -->
+                                </cover-view>
+                                <cover-view class="sta_bottom" >电池电量</cover-view>
+                            </cover-view>
+                        </cover-view>
+
+
+                        <cover-view class="statu">
+                            <cover-view class="sta">
+                                <cover-view class='sta_top' >{{bikeRiding.statu}}
+                                </cover-view>
+                                <cover-view class="sta_bottom" >车辆状态</cover-view>
+                            </cover-view>
+                        </cover-view>
+                        <cover-view class="statu">
+                            <cover-view class="sta">
+                                <cover-view class='sta_top' >{{bikeRiding.ridingDistance}}km                                  
+                                </cover-view>
+                                <cover-view class="sta_bottom">续航里程</cover-view>
+                            </cover-view>
+                        </cover-view>        
+                    </cover-view>
+                    <!--end statu层-->
+
+                    <cover-view class="lock">                      
+                        <cover-view class='left_text'>用车编号:</cover-view>
+                        <cover-view class='right_text'>{{bikeRiding.bike_qr}}</cover-view>
+                    </cover-view> 
+                    
+                    <cover-view class="button">                        
+                        <cover-view class='right' style="text-align: right; l" bindtap="locking">
+                            <cover-view class="but_lock" disabled="{{disabled}}">结束行驶</cover-view>
+                        </cover-view>
+                    </cover-view>
+            </cover-view>        
+             <cover-view class="down_up"  bindtap="down_up">
+                <cover-image class="up_img" wx:if ="{{down == 0}}" src="../images/up.png"/>
+                <cover-image class="up_img" wx:else ="{{down == 1}}" src="../images/down.png"/>
+            </cover-view> 
+            
+        </cover-view>
+        </map>
+</view>
+  
+
+
+
+
+
+

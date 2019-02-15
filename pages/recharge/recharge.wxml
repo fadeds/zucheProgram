@@ -1,0 +1,33 @@
+<view class="depositView" style = "overflow:hidden">
+    <view class="depositBlock">
+        <view class="currentMoney">充值金额 <view style="margin-left: 40rpx; font-size: 34rpx; line-height: 80rpx;color: {{app.globalData.main_color}}">{{currentMoney}}</view>
+        </view>
+        <view class="box" style ="width:100%;height: {{recharge.height}};">
+          <view style="width:37%;display:inline-block;height: {{recharge.height}} ">
+              <button class="chioce" wx:for="{{moneyArr}}" wx:if="{{index ==0 || index == 1|| index ==5}}" wx:key="recharge" bindtap="chioceAct" data-index="{{item.index}}" data-currentid="{{item.id}}" style="color: #ffffff; background-color: {{item.background}}; margin-top:17rpx;line-height:60rpx">{{item.content}}
+               <text class="dis" wx:if="{{index ==0 || index == 1}}">充{{item.content}}送{{item.discount}}元</text> 
+               <text class="nodis" wx:elif="{{index == 5}}">{{item.discount}}</text>
+               </button>
+          </view>
+          <view class="right" style="height:{{recharge.height}}">
+              <view class="tipU">超出可骑行区域,需要缴纳搬运费</view>
+              <view class="tipU" bindtap="tipUserInfo">可骑行范围,请点击<text style = "color:red">《用车说明》</text></view>
+              <view class="tipU" >骑行结束后,剩余余额可随时退还</view> 
+          </view>
+    </view>
+    </view>
+    <input class="input"  wx:if="{{qita == true}}" minlength="1" maxlength="10" bindinput="bindKeyInput" value="{{real_price}}" placeholder=" 请 输 入 充 值 金 额  "/>
+<view class="text" bindtap="chargeAgree">
+    <view class="text_top">
+        <view style="display:inline-block; "> 点击立即支付,即是已阅读并同意 </view>
+        <view style="display:inline-block; color:#3692fc">《充值协议》</view>
+    </view>
+  <view class="text_top">挽乘不会以任何形式要求您输入银行账户或密码</view>
+</view>
+    <view class="foo">
+      <button class="depositBtn  {{hasBtn?'depositBtnOpactiy':'depositBtnOpactiy1'}}"  bindtap="gotoRecharged">充值余额</button>
+    </view>  
+  <view wx:if='{{loading}}'></view>
+</view>
+
+  

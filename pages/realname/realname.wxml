@@ -1,0 +1,48 @@
+  <!--认证-->
+<view class="deposit">
+  <view class="deposit_progress">
+    <view class="deposit_progress_logo">
+      <view>
+        <image class="deposit_progress_one" src="../images/img/invalid.png" />
+      </view>
+      <view class="deposit_progress_line"></view>
+      <view>
+        <image class="deposit_progress_two" src="../images/img/progress_act.png" />
+        <view class="deposit_progress_two_tips">2</view>
+      </view>
+    </view>
+    <view class="deposit_progress_tips">
+      <view class="deposit_progress_one_title">交纳押金</view>
+      <view class="deposit_progress_two_title">实名认证</view>
+    </view>
+  </view>
+  <view class="real-container">
+    <view class="real_input_one">
+      <view class="real_username">
+        姓名
+      </view>
+      <view class="phone-inp">
+        <input bindinput="nameTfInput" class="real_input" bindblur="checkName" type="text" maxlength="4" placeholder="请输入姓名" value="{{realData.realname}}" />
+      </view>
+      <view class="real_del_pic" catchtap="del">
+        <image class="del" src="../images/img/phone_del.png" />
+      </view>
+    </view>
+    <view class="real_input_two">
+      <view class="real_idno">身份证号</view>
+      <view class="real_idno_wrapper">
+        <input bindinput="cardTfInput" class="real_idno_input" maxlength="18" placeholder="请输入身份证号" value="{{realData.idno}}" />
+      </view>
+    </view>
+    <view class="real_vcode_error"  wx:if='{{realData.vcode_error_dis}}'>{{realData.error_detail}}</view>
+    <view class="button_word">
+      <view bindtap="realname" class="real {{realData.real_dis?'':'real_pass'}}">认证</view>
+
+      
+    </view>
+    <!-- <view class="us-users">
+      港澳台及海外用户？
+      </view> -->
+  </view>
+</view>
+<!--认证-->

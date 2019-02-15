@@ -1,0 +1,13 @@
+<template name="advertisement">
+  <scroll-view class="container">
+      <view class="scrolltxt">
+        <view class="marquee_box">
+          <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+            <text style="color:#f8f8f8;">{{text}}</text>
+            <text style="margin-right:{{marquee_margin}}px;"></text>
+            <text style="margin-right:{{marquee_margin}}px; color:#f8f8f8">{{text}}</text>         
+          </view>
+        </view>
+      </view>
+  </scroll-view>
+</template>

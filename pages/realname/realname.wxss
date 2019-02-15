@@ -1,0 +1,258 @@
+/*认证*/
+.deposit_progress_tips {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff;
+  width: 750rpx;
+  height: 240rpx;
+  background: #333;
+}
+.real-container {
+  width: 600rpx;
+  margin: 60rpx auto;
+}
+
+.real_input_one {
+  border-bottom: 2rpx solid #ddd;
+  height: 132rpx;
+}
+
+.real_input_two {
+  height: 132rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.phone-inp,.real_idno_wrapper {
+  height: 100%;
+  float: left;
+}
+
+.real_del_pic {
+  float: right;
+  height: 100%;
+  width: 80rpx;
+  text-align: right;
+}
+
+.real_username, .phone-inp, .real_idno {
+  float: left;
+}
+
+.real_username, .real_idno {
+  width: 120rpx;
+  height: 100%;
+  line-height: 132rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.real_input {
+  width: 400rpx;
+  margin-top: 40rpx;
+  display: inline-block;
+  border: 0 solid #fff;
+}
+
+.real_idno_input {
+  width:480rpx;
+  margin-top: 40rpx;
+  display: inline-block;
+  border: 0 solid #fff;
+}
+
+.del {
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 50rpx;
+  margin-right: 20rpx;
+}
+
+.real_vcode_error {
+  position: absolute;
+  left: 72rpx;
+  top: 610rpx;
+  /*line-height: 90rpx;*/
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #f4333c;
+  letter-spacing: 0;
+}
+
+.button_word {
+  margin-top: 120rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fff;
+  height: 90rpx;
+}
+
+.real {
+  border-radius: 10rpx;
+  font-family: PingFangSC-Light;
+  font-size: 32rpx;
+  letter-spacing: 0;
+  color: #fff;
+  background-color: #ddd;
+}
+
+.real_pass {
+  background-color: #f69b31;
+}
+.us-users{
+  text-align: center;
+  font-size: 24rpx;
+  color: #0090ff;
+  margin-top:24rpx;
+  font-family: PingFangSC-Regular;
+}
+/*progress*/
+
+.deposit_progress_one {
+  position: absolute;
+  left: 162rpx;
+  top: 78rpx;
+  width: 52rpx;
+  height: 52rpx;
+}
+
+.deposit_progress_one_tips {
+  position: absolute;
+  width: 52rpx;
+  height: 52rpx;
+  left: 162rpx;
+  top: 78rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.deposit_progress_line {
+  position: absolute;
+  right: 228rpx;
+  top: 103rpx;
+  width: 296rpx;
+  border-top: 4rpx dotted #bbb;
+}
+
+.deposit_progress_two {
+  position: absolute;
+  right: 160rpx;
+  top: 78rpx;
+  width: 52rpx;
+  height: 52rpx;
+}
+
+.deposit_progress_two_tips {
+  position: absolute;
+  width: 52rpx;
+  height: 52rpx;
+  right: 160rpx;
+  top: 78rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.deposit_progress_tips {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #fff;
+  width: 750rpx;
+}
+
+.deposit_progress_one_title {
+  position: absolute;
+  left: 132rpx;
+  top: 140rpx;
+  /*width: 200rpx;*/
+}
+
+.deposit_progress_two_title {
+  position: absolute;
+  right: 130rpx;
+  top: 140rpx;
+  /*width: 200rpx;*/
+}
+
+.deposit_progress_pic {
+  text-align: center;
+  height: 208rpx;
+}
+
+.dep_pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -189rpx;
+  margin-top: -104rpx;
+  width: 378rpx;
+  height: 208rpx;
+}
+
+.deposit_progress_detail {
+  position: absolute;
+  width: 750rpx;
+  top: 68rpx;
+  text-align: center;
+}
+
+.deposit_num {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 52.8rpx;
+  color: #000;
+  letter-spacing: 0;
+}
+
+.rmb {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 33rpx;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.deposit-des {
+  text-align: center;
+}
+
+.deposit-btn {
+  margin: 30rpx 0 20rpx;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.deposit-ms {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.pay-btn {
+  width: 600rpx;
+  height: 90rpx;
+  background: #1aae18;
+  margin: 58rpx auto 0;
+  text-align: center;
+  color: #fff;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+}
+
+.wxpay_logo {
+  vertical-align: middle;
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 16rpx;
+}
+
+.dis{
+  display: block;
+}

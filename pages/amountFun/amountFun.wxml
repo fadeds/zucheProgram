@@ -1,0 +1,41 @@
+<!--未交纳押金-->
+<view>
+  <view class="deposit_progress">
+    <view class="deposit_progress_logo">
+    <image class="deposit_bdg" src="../images/bg-amountFun.png" />
+    
+      <view>
+        <view class="deposit_progress_one_tips">您当前可退余额为：</view>
+      </view>
+      <!-- <view class="deposit_progress_line"></view> -->
+      <view>
+        <view class="deposit_progress_two_tips">{{amountData.amountNum}} 元</view>
+      </view>
+      
+    </view>
+    
+    <!-- <view class="deposit_progress_tips">
+      <view class="deposit_progress_one_title">其他为活动或充值赠送金额</view>
+    </view> -->
+    
+  </view>
+  <!-- <view class="content">
+    <view class="deposit_progress_pic">
+      <image class="dep_pic" src="../images/img/deposit.png" />
+    </view>
+    <view class="deposit_progress_detail">
+      <view class="deposit_num">{{depositData.depositNum}}</view>
+      <view class="rmb">元</view>
+    </view>
+  </view> -->
+  <view class="deposit-des">
+    <view class="deposit-btn">退款将原路退回</view>
+    <view class="deposit-ms">(到账时间以银行实际到账时间为准)</view>
+  </view>
+  <view bindtap="amountFun" class="pay-btn">
+    确定退款
+  </view>
+   <!--加载图标-->
+  <!-- <view wx:if='{{loading}}'><image src='../images/loading.gif' style="position:fixed;left:40rpx;top:180px;"></image></view> -->
+  <view wx:if='{{loading}}'></view>
+</view>

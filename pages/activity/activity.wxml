@@ -1,0 +1,20 @@
+<!--<web-view src="https://www.kyzlc.com/activity/activityList.html"></web-view>-->
+<scroll-view class="explain" scroll-y='true' scroll-top='0'>
+  <!--循环-->
+  <view style="margin-bottom: 4%;margin-top: 6%" wx:for-items="{{activityList}}">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">{{item.activity_title}}</view>
+     <view class="xian"></view>
+    </view>
+    <view>
+     <image src="{{item.activity_image}}"/>
+     <p>{{item.activity_desc}}</p >
+     <view>
+    	<view class="time"> {{item.activity_start_time}}-{{item.activity_end_time}}</view>
+    	<view wx:if="{{item.valid_flag == 1}}" class='ing'>活动进行中</view><view wx:if="{{item.valid_flag == 0}}" class='expire'>活动已过期</view>
+    </view>
+    </view>
+   </view>
+  <!--end循环结束-->
+   
+ </scroll-view>
